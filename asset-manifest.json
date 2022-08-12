@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/DiluteIt/static/css/main.62fd2fc0.css",
+    "main.js": "/DiluteIt/static/js/main.b57a154c.js",
+    "static/js/787.862ab7c1.chunk.js": "/DiluteIt/static/js/787.862ab7c1.chunk.js",
+    "static/media/bg2.jpg": "/DiluteIt/static/media/bg2.980ebb98f33cf788a770.jpg",
+    "static/media/facebook.png": "/DiluteIt/static/media/facebook.4601813fdfd38956e5c5.png",
+    "static/media/github.svg": "/DiluteIt/static/media/github.8dc109b9aaf725b7fa3104bad57f7805.svg",
+    "static/media/instagram.svg": "/DiluteIt/static/media/instagram.dc73f2e701a99e31e287b9b234ce0a8d.svg",
+    "static/media/dribble.svg": "/DiluteIt/static/media/dribble.437f863924861edc6646fd8ca66ffd46.svg",
+    "static/media/twitter.svg": "/DiluteIt/static/media/twitter.3c8aa9b1c5bfd8e7a4428583eade7243.svg",
+    "index.html": "/DiluteIt/index.html",
+    "main.62fd2fc0.css.map": "/DiluteIt/static/css/main.62fd2fc0.css.map",
+    "main.b57a154c.js.map": "/DiluteIt/static/js/main.b57a154c.js.map",
+    "787.862ab7c1.chunk.js.map": "/DiluteIt/static/js/787.862ab7c1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62fd2fc0.css",
+    "static/js/main.b57a154c.js"
+  ]
+}
