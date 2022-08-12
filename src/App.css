@@ -1,38 +1,475 @@
-.App {
-  text-align: center;
+.navbar{
+    background-color: transparent;
+    position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo_name{
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    margin-left: 5vh;
+    z-index: 1;
+    position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.navbar_floating{
+    background-color: #0c0c0c;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    transition: 0.4s;
+    overflow-x: hidden;
+    width: 0;
+}
+
+.navbar_floating_container{
+    padding-top: 45px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    padding-right: 10px;
+}
+
+.navbar_floating h7{
+    color: rgb(185, 98, 232);
+    font-family: "montserrat" sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin-left: 25px;
+}
+
+.navbar_floating ul{
+    list-style-type: none;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.navbar_floating ul li{
+    padding: 12px;
+    padding-left: 15px;
+}
+
+.navbar_floating ul li a{
+    color: white;
+    font-family: "varela round";
+    font-size: 1.2em;
+    font-weight: 150;
+    text-decoration: none;
+}
+
+.navbar_floating ul li a:hover{
+    color: rgb(185, 98, 232);
+}
+
+.navbar_floating p{
+    color: rgb(150, 150, 150);
+    font-family: "varela round";
+    font-size: 0.8em;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+
+.open_nav{
+    float: right;
+    padding: 5px 16px;
+    padding-top: 0px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "varela round";
+    position: sticky;
+    top: 25px;
+    z-index: 100;
+    /* margin-top: 7px; */
+    margin-right: 30px;
+    height: 45px;
+    background-color: #131313;
+    color: white;
+}
+
+.Menu{
+    margin-right: 10px;
+}
+
+.Menu_after{
+    font-size: 1.3em;
+}
+
+.close_nav{
+    float: right;
+    right: 5px;
+    padding: 15px 45px;
+    margin-top: 30px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 1.7em;
+    cursor: pointer;
+}
+
+.Topcontainer{
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Topcontainer {
+    width: 100%;
+    margin-top: -130px;
+    background-image: url("bg/bg2.jpg");
+    height: 836px;
   }
+  
+.Topcontainer::before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.65);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Topcontainer h4{
+
+position: absolute;
+letter-spacing: 0.3rem;
+top: 262px;
+left: 235px;
+font-size: 18px;
+color: rgb(156, 156, 156);
+font-family: 'varela round';
+
+
 }
 
-.App-link {
-  color: #61dafb;
+.Topcontainer p{
+position: absolute;
+top: 260px;
+left: 232px;
+font-size: 65px;
+color: white;
+font-weight: bold;
+line-height: 80px;
+font-family: "varela round";
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.cont-button{
+    position: absolute;
+    top: 750px;
+    left: 225px;
 }
+
+.cont-button ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cont-button ul li{
+    display: inline;
+    padding: 10px;
+    padding-left: 15px;
+}
+
+.cont-button ul li a{
+    color: white;
+    font-family: "varela round";
+    font-size: 0.8em;
+    font-weight: 150;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 55px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    transition: 0.6s;
+}
+
+.cont-button ul li a:hover{
+    color: rgb(111, 14, 163);
+    background-color: rgb(255, 255, 255);
+}
+
+.social_adder{
+    position: absolute;
+    top: 290px;
+    right: 0;
+    z-index: 1;
+    transition: 0.4s;
+    overflow-x: hidden;
+    width: 150px;
+}
+
+.social_adder img{
+    padding-bottom: 10px;
+    height: 30px;
+    width: 30px;
+}
+.social_adder ul{
+    list-style-type: none;
+    padding: 72px;
+}
+
+.social_adder ul li{
+    list-style-type: none;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.social_adder ul li a{
+    color: white;
+    font-family: "varela round";
+    font-size: 0.7em;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+    .Topcontainer h4{
+        top: auto;
+        left: auto;
+        font-size: 18px;
+        color: rgb(156, 156, 156);
+        font-family: 'varela round';
+    }
+    .Topcontainer p{
+        top: 40%;
+        left: 103px;
+        font-size: 35px;
+        color: white;
+        font-weight: bold;
+        line-height: 40px;
+        font-family: "varela round";
+    }
+    .cont-button{
+        position: absolute;
+        top: 600px;
+        left: 0;
+    }
+    .cont-button ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 85px;
+    }
+    .cont-button ul li{
+        display: inline;
+        padding: 10px;
+        padding-left: 15px;
+    }
+    .cont-button ul li a{
+        color: white;
+        font-family: "varela round";
+        font-size: 0.6em;
+        font-weight: 150;
+        text-decoration: none;
+        border: 2px solid white;
+        padding: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: 0.6s;
+    }
+    .cont-button ul li a:hover{
+        color: rgb(111, 14, 163);
+        background-color: rgb(255, 255, 255);
+    }
+    .social_adder{
+        position: absolute;
+        top: 40%;
+        right: 0;
+        z-index: 1;
+        transition: 0.4s;
+        overflow-x: hidden;
+        width: 150px;
+    }
+    .social_adder img{
+        padding-bottom: 10px;
+        height: 17px;
+        width: 17px;
+    }
+    .social_adder ul{
+        list-style-type: none;
+        padding: 72px;
+    }
+    .social_adder ul li{
+        list-style-type: none;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+    .social_adder ul li a{
+        color: white;
+        font-family: "varela round";
+        font-size: 0.7em;
+        font-weight: 200;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .Topcontainer h4{
+        top: auto;
+        left: auto;
+        font-size: 18px;
+        color: rgb(156, 156, 156);
+        font-family: 'varela round';
+    }
+    .Topcontainer p{
+        top: auto;
+        left: auto;
+        font-size: 65px;
+        color: white;
+        font-weight: bold;
+        line-height: 80px;
+        font-family: "varela round";
+    }
+    .cont-button{
+        position: absolute;
+        top: auto;
+        left: auto;
+    }
+    .cont-button ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .cont-button ul li{
+        display: inline;
+        padding: 10px;
+        padding-left: 15px;
+    }
+    .cont-button ul li a{
+        color: white;
+        font-family: "varela round";
+        font-size: 0.8em;
+        font-weight: 150;
+        text-decoration: none;
+        border: 2px solid white;
+        padding: 55px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        transition: 0.6s;
+    }
+    .cont-button ul li a:hover{
+        color: rgb(111, 14, 163);
+        background-color: rgb(255, 255, 255);
+    }
+    .social_adder{
+        position: absolute;
+        top: auto;
+        right: auto;
+        z-index: 1;
+        transition: 0.4s;
+        overflow-x: hidden;
+        width: 150px;
+    }
+    .social_adder img{
+        padding-bottom: 10px;
+        height: 30px;
+        width: 30px;
+    }
+    .social_adder ul{
+        list-style-type: none;
+        padding: 72px;
+    }
+    .social_adder ul li{
+        list-style-type: none;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+    .social_adder ul li a{
+        color: white;
+        font-family: "varela round";
+        font-size: 0.7em;
+        font-weight: 200;
+        text-decoration: none;
+    }
+}   
+
+@media only screen and (max-width: 480px) {
+    .Topcontainer h4{
+        top: auto;
+        left: auto;
+        font-size: 18px;
+        color: rgb(156, 156, 156);
+        font-family: 'varela round';
+    }
+    .Topcontainer p{
+        top: auto;
+        left: auto;
+        font-size: 65px;
+        color: white;
+        font-weight: bold;
+        line-height: 80px;
+        font-family: "varela round";
+    }
+    .cont-button{
+        position: absolute;
+        top: auto;
+        left: auto;
+    }
+    .cont-button ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .cont-button ul li{
+        display: inline;
+        padding: 10px;
+        padding-left: 15px;
+    }
+    .cont-button ul li a{
+        color: white;
+        font-family: "varela round";
+        font-size: 0.8em;
+        font-weight: 150;
+        text-decoration: none;
+        border: 2px solid white;
+        padding: 55px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        transition: 0.6s;
+    }
+    .cont-button ul li a:hover{
+        color: rgb(111, 14, 163);
+        background-color: rgb(255, 255, 255);
+    }
+    .social_adder{
+        position: absolute;
+        top: auto;
+        right: auto;
+        z-index: 1;
+        transition: 0.4s;
+        overflow-x: hidden;
+        width: 150px;
+    }
+    .social_adder img{
+        padding-bottom: 10px;
+        height: 30px;
+        width: 30px;
+    }
+    .social_adder ul{
+        list-style-type: none;
+        padding: 72px;
+    }
+    .social_adder ul li{
+        list-style-type: none;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+    .social_adder ul li a{
+        color: white;
+        font-family: "varela round";
+        font-size: 0.7em;
+        font-weight: 200;
+        text-decoration: none;
+    }
+}   
